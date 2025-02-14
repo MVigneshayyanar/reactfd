@@ -1,10 +1,10 @@
 *{
   background-color: black;
-  text-align: center;
-
 }
 h1{
-  color:red;
+  color: blueviolet;
   text-align: center;
-  margin-left: 190%;
+  margin-top: 15%;
+  font-family: cursive;
+  font-size: 10rem;
 }
