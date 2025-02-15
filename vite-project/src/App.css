@@ -1,10 +1,25 @@
 *{
   background-color: black;
+  font-family:cursive;
 }
 h1{
   color: blueviolet;
   text-align: center;
   margin-top: 15%;
   font-family: cursive;
-  font-size: 10rem;
+  font-size: 750%;
+}
+button{
+  background-color:rgb(255, 255, 255);
+  color: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: none;
+  border: none;
+  font-size: 2em;
+}
+#but{
+  align-items: center; 
+  text-align: center;
 }
