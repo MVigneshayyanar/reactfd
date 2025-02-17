@@ -1,28 +1,29 @@
 import './App.css'
-
+import Component from './Component';
 function App() {
-  alert("Welcome to the site");
-const name = "VIGNESH";
-console.log("my age is 19");
 
-function first(){
-  console.log("Thanks for clicking first button");
-}
+  const person1={
+    name:"Vignesh INR",
+    age:19,
+    city:"Chennai",
+  }
+  const person2={
+    name:"fake",
+    age:19,
+    city:"Tvl",
+  }
 
-const second = () => {
-  console.log("Thanks for clicking second button");
-};
-
-
+  const{age:hbd}=person1
+  console.log("Happy ",hbd," guys")
   return(
     <>
-
-     <h1>{name} INR</h1>
-     <div id="but">
-     <button onClick={first}>Click 1</button>
-     <button onClick={second}>Click 2</button>
-     <button onClick={()=>console.log("Thanks for clicking third buttton")}>Click 3</button>
+    <div id="container2">
+    <Component firstName={person1.name} firstAge={person1.age} firstCity={person1.city} secondName={person2.name} secondAge={person2.age} secondCity={person2.city}/>
      </div>
+    <div id="container1">
+    <button onClick={()=>alert("Thanks for the Click")}>SINGLE CLICK</button>
+    <button onDoubleClick={()=>alert("Thanks for the Double Click")}>DOUBLE CLICK</button>
+    </div>
     </>
   )
 }

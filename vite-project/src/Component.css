@@ -1,0 +1,17 @@
+p{
+    color:azure;
+}
+*{
+    color:blueviolet;
+}
+#mainContainer{
+    border: 10px solid ;
+    border-radius: 50px;
+    width: 175px;
+    height: 175px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}

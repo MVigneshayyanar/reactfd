@@ -1,6 +1,7 @@
 *{
   background-color: black;
   font-family:cursive;
+  text-align: center;
 }
 h1{
   color: blueviolet;
@@ -22,4 +23,14 @@ button{
 #but{
   align-items: center; 
   text-align: center;
+}
+#container1{
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+#container2{
+  margin: 100px;
+  display: flex;
+  justify-content: center;
 }
