@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: blueviolet;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+input{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid white;
+  color: whitesmoke;
+}
+::placeholder{
+  color: whitesmoke;
+}
+button{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 3px solid white;
+  color: whitesmoke;
+  background-color: blueviolet;
+}
+button:hover{
+  background-color: white;
+  color: blueviolet;
+  border: 3px solid blueviolet;
+  cursor: pointer;
+}
