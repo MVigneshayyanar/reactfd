@@ -1,21 +1,27 @@
-import React from 'react'
-import './Component.css'
+import React from "react"
+import { useState } from 'react';
+import { FaFemale, FaMale } from 'react-icons/fa';
+import  './Component.css';
 
-const Component = (props) => {
-  return (
-    <>
-    <div id="mainContainer">
-    <h2>{props.firstName}</h2>
-    <p>{props.firstAge}</p>
-    <p>{props.firstCity}</p>
+const Person=(props)=>{
+  const [gender, setGender] = useState('M');
+
+const changeGender = () => {
+  setGender(gender === 'M' ? 'F' : 'M');
+};
+  return(
+
+      <div id="container">
+      <h1>Name: {props.name}</h1>
+      <p>Age: &nbsp; &nbsp;{props.age}</p>
+      <p>City: {props.city}</p>
+      <h2>Gender: {gender}</h2>
+      <div id="genderIcon">
+        {gender === 'M' ? <FaMale /> : <FaFemale />}
+      </div>
+      <button onClick={changeGender}>Click to change gender</button>
     </div>
-    <div id="mainContainer">
-    <h2>{props.secondName}</h2>
-    <p>{props.secondAge}</p>
-    <p>{props.secondCity}</p>
-    </div>
-    </>
-  )
+  );
 }
 
-export default Component
+export default Person;
