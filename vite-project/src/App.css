@@ -2,15 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: blueviolet;
 }
 form{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: rgb(0, 0, 0);
+  padding-right: 0px;
 }
 input{
   margin: 10px;
